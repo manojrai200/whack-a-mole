@@ -48,7 +48,7 @@ h1 {
 }
 
 .hole {
-  background-image: url("./images/hole.png");
+  background-image: url("./images/hole1.png");
   background-size: contain;
   width: 110px;
   height: 123px;
@@ -56,9 +56,14 @@ h1 {
 }
 
 .mole {
-  background-image: url("./images/mole.png");
+  background-image: url("./images/mole4.png");
 }
 
+.whacked {
+  background: url('./images/whackedMole1.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 #controls {
   margin-top: 20px;

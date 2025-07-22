@@ -64,9 +64,14 @@ function endGame() {
 
 function handleClick(event) {
   if (event.target.classList.contains('mole')) {
+    score++;
+    scoreDisplay.innerText = 'Score: ' + score;
     event.target.classList.remove('mole');
-      score++;
-      scoreDisplay.innerText = 'Score: ' + score;
+    event.target.classList.add('whacked');
+    setTimeout(() => {
+      event.target.classList.remove('whacked');
+    }, 500)
+
   }
 }
 
