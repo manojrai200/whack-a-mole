@@ -1,4 +1,7 @@
 let score = 0;
+
+localStorage.removeItem('highScore');
+
 let highScore = localStorage.getItem('highScore') || 0;
 const scoreDisplay = document.getElementById('score');
 const highScoreDisplay = document.getElementById('high-score');
